@@ -1,0 +1,10 @@
+git clone --bare https://github.com/yihehe/dotfiles.git $HOME/.cfg
+
+function gitdf {
+   /usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME $@
+}
+gitdf checkout
+gitdf config status.showUntrackedFiles no
+
+echo 'source ~/.yihe_profile\n' >> ~/.zshrc
+
