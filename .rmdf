@@ -4,7 +4,7 @@ alias gitdf='git --git-dir=$HOME/.gitdf/ --work-tree=$HOME'
 mv ~/.zshrc ~/.zshrc.bak
 sed "/^source ~\/.yihe_profile$/d" ~/.zshrc.bak > ~/.zshrc
 
-if [ -s "~/.zshrc" ]
+if [ -s "$HOME/.zshrc" ]
 then
     rm ~/.zshrc.bak
 else
