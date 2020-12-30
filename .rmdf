@@ -1,3 +1,5 @@
+alias gitdf='git --git-dir=$HOME/.gitdf/ --work-tree=$HOME'
+
 # revert .zshrc
 mv ~/.zshrc ~/.zshrc.bak
 sed "/^source ~\/.yihe_profile$/d" ~/.zshrc.bak > ~/.zshrc
@@ -7,6 +9,7 @@ then
     rm ~/.zshrc.bak
 else
     echo "something went wrong, ./.zshrc backed up in ./.zshrc.bak"
+    exit 1
 fi
 
 # remove git repo
