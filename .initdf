@@ -1,6 +1,7 @@
 git clone --bare https://github.com/yihehe/dotfiles.git $HOME/.gitdf
 
 alias gitdf='git --git-dir=$HOME/.gitdf/ --work-tree=$HOME'
+gitdf checkout
 gitdf pull
 gitdf config status.showUntrackedFiles no
 
