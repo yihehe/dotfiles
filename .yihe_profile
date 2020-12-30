@@ -23,3 +23,8 @@ jitouch()
   open ~/Library/PreferencePanes/Jitouch.prefPane/Contents/Resources/Jitouch.app
 }
 
+export HISTSIZE=10000000
+export SAVEHIST=$HISTSIZE
+setopt HIST_FIND_NO_DUPS
+setopt INC_APPEND_HISTORY
+
