@@ -60,4 +60,5 @@ set relativenumber
 
 " smaller tabs
 set tabstop=4
+set expandtab
 

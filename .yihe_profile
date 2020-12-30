@@ -1,6 +1,6 @@
-alias gitdf='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
-
 alias s="source ~/.zshrc"
+
+alias gitdf='git --git-dir=$HOME/.gitdf/ --work-tree=$HOME'
 
 alias gs="git status"
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset     %C(yellow)%d%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
