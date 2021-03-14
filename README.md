@@ -9,18 +9,16 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 ```
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 ```
-(ignore any setup)
+(ignore any setup config afterwards)
 
 3. Initialize dotfiles
 ```
-curl https://raw.githubusercontent.com/yihehe/dotfiles/master/.initdf.zsh | /bin/zsh
+curl https://raw.githubusercontent.com/yihehe/dotfiles/master/.initdf.zsh | zsh
 ```
-
-4. Remove default ZSH theme setting from `.zshrc`
 
 # Cleanup
 ```
-/bin/zsh ~/.rmdf.zsh
+zsh ~/.rmdf.zsh
 ```
 
 ## Resources

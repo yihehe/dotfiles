@@ -6,6 +6,14 @@ alias gitdf='git --git-dir=$HOME/.gitdf/ --work-tree=$HOME'
 mv ~/.zshrc ~/.zshrc.bak
 sed "/^source ~\/.yihe_profile.zsh$/d" ~/.zshrc.bak > ~/.zshrc
 
+if [[ "$(uname)" == "Darwin" ]]
+then
+    # macos
+    sed -i '' 's/^# ZSH_THEME="robbyrussell"$/ZSH_THEME="robbyrussell"/g' .zshrc
+else
+    sed -i 's/^# ZSH_THEME="robbyrussell"$/ZSH_THEME="robbyrussell"/g' .zshrc
+fi
+
 if [ -s "$HOME/.zshrc" ]
 then
     rm ~/.zshrc.bak
