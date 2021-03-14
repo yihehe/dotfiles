@@ -56,7 +56,8 @@ set ttyfast
 set mouse=a
 
 " relative line numbers
-set relativenumber
+"set relativenumber
+set number
 
 " smaller tabs
 set tabstop=4

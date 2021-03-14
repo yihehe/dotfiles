@@ -1,8 +1,10 @@
+#!/bin/zsh
+
 alias gitdf='git --git-dir=$HOME/.gitdf/ --work-tree=$HOME'
 
 # revert .zshrc
 mv ~/.zshrc ~/.zshrc.bak
-sed "/^source ~\/.yihe_profile$/d" ~/.zshrc.bak > ~/.zshrc
+sed "/^source ~\/.yihe_profile.zsh$/d" ~/.zshrc.bak > ~/.zshrc
 
 if [ -s "$HOME/.zshrc" ]
 then

@@ -1,6 +1,22 @@
-alias s="source ~/.zshrc"
+# powerline10k
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
 
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+ZSH_THEME="powerlevel10k/powerlevel10k"
+
+
+# git dot-file
 alias gitdf='git --git-dir=$HOME/.gitdf/ --work-tree=$HOME'
+
+# aliases
+alias s="source ~/.zshrc"
 
 alias gs="git status"
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset     %C(yellow)%d%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
@@ -23,6 +39,7 @@ jitouch()
   open ~/Library/PreferencePanes/Jitouch.prefPane/Contents/Resources/Jitouch.app
 }
 
+# zsh settings
 export HISTSIZE=10000000
 export SAVEHIST=$HISTSIZE
 setopt HIST_FIND_NO_DUPS
