@@ -18,7 +18,7 @@ curl https://raw.githubusercontent.com/yihehe/dotfiles/master/.initdf.zsh | zsh
 
 # Cleanup
 ```
-zsh ~/.rmdf.zsh
+zsh ~/.undf.zsh
 ```
 
 ## Resources
